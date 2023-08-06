@@ -12,10 +12,11 @@ index 9fe934f7..9662d4ee 100644
  		glBindFramebuffer(GL_FRAMEBUFFER, 0);
  		pop_gles2_debug(renderer);
  
-diff --git a/types/output/render.c b/types/output/render.c
-index 2e38919a..97f78608 100644
---- a/types/output/render.c
-+++ b/types/output/render.c
+
+diff --git a/subprojects/wlroots/types/output/render.c b/subprojects/wlroots/types/output/render.c
+index a185d844..01df6ffc 100644
+--- types/output/render.c
++++ types/output/render.c
 @@ -240,22 +240,7 @@ bool output_pick_format(struct wlr_output *output,
  }
  
