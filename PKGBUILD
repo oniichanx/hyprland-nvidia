@@ -50,10 +50,10 @@ makedepends=(
 	wayland-protocols
 	xorgproto)
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/source-v${pkgver}.tar.gz"
-        "nvidia.patch")
+        "wlroots-nvidia.patch")
 conflicts=("${_pkgname}")
 provides=(hyprland)
-sha256sums=('baf355cb4e301b27de59fa5fc503b7338eed1bc921fcf76b73629504a00ffefd' '10223a97a622ea7e641b4305a9a4f7bf0cb0526dacfbfa5970171558b3a63488')
+sha256sums=('baf355cb4e301b27de59fa5fc503b7338eed1bc921fcf76b73629504a00ffefd' 'SKIP')
 options=(!makeflags !buildflags !strip)
 
 build() {
